@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/notepadFragment">
+    <fragment
+        android:id="@+id/notepadFragment"
+        android:name="nl.hva.task01.ui.NotepadFragment"
+        android:label="fragment_notepad"
+        tools:layout="@layout/fragment_notepad" >
+        <action
+            android:id="@+id/action_notepadFragment_to_addNoteFragment"
+            app:destination="@id/addNoteFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addNoteFragment"
+        android:name="nl.hva.task01.ui.AddNoteFragment"
+        android:label="fragment_add_note"
+        tools:layout="@layout/fragment_add_note" />
+</navigation>
